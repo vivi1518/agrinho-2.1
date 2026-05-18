@@ -6,7 +6,6 @@
 <title>Agrinho 2026</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -20,7 +19,6 @@ body{
 }
 
 /* HEADER */
-
 header{
     background:linear-gradient(to right,#2e7d32,#66bb6a);
     color:white;
@@ -38,7 +36,6 @@ header p{
 }
 
 /* MENU */
-
 nav{
     background:#1b5e20;
     padding:15px;
@@ -58,7 +55,6 @@ nav a:hover{
 }
 
 /* BANNER */
-
 .banner{
     width:100%;
     height:450px;
@@ -66,7 +62,6 @@ nav a:hover{
 }
 
 /* CONTAINER */
-
 .container{
     width:90%;
     max-width:1200px;
@@ -75,7 +70,6 @@ nav a:hover{
 }
 
 /* TEXTOS */
-
 .texto{
     background:white;
     margin-bottom:25px;
@@ -94,8 +88,21 @@ nav a:hover{
     line-height:1.7;
 }
 
-/* VIDEOS */
+/* IMAGENS */
+.imagens{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-bottom:25px;
+}
 
+.imagens img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* VIDEOS */
 .videos{
     background:white;
     padding:25px;
@@ -118,13 +125,12 @@ nav a:hover{
 
 .video-grid iframe{
     width:100%;
-    height:250px;
+    aspect-ratio:16/9;
     border:none;
     border-radius:12px;
 }
 
 /* FOOTER */
-
 footer{
     background:#1b5e20;
     color:white;
@@ -133,9 +139,7 @@ footer{
 }
 
 /* RESPONSIVO */
-
 @media(max-width:768px){
-
     header h1{
         font-size:38px;
     }
@@ -152,9 +156,7 @@ footer{
         display:block;
         margin:10px 0;
     }
-
 }
-
 </style>
 </head>
 
@@ -177,6 +179,7 @@ footer{
 
 <div class="container">
 
+    <!-- TEXTOS -->
     <section class="texto">
         <h2>A importância do campo</h2>
         <p>
@@ -204,41 +207,17 @@ footer{
         </p>
     </section>
 
-    <section class="texto">
-        <h2>Sustentabilidade</h2>
-        <p>
-            A sustentabilidade é importante para garantir um futuro melhor. O cuidado com
-            a água, o solo e as florestas ajuda na preservação ambiental e no equilíbrio
-            da natureza.
-        </p>
-    </section>
-
-    <section class="texto">
-        <h2>Campo e cidade unidos</h2>
-        <p>
-            Campo e cidade estão conectados. Enquanto o campo produz alimentos e matérias-primas,
-            a cidade oferece tecnologia, comércio e serviços. Essa união beneficia toda
-            a sociedade.
-        </p>
-    </section>
-
-    <section class="texto">
-        <h2>O futuro da agricultura</h2>
-        <p>
-            O futuro da agricultura depende da inovação, da preservação ambiental e do uso
-            consciente dos recursos naturais. Produzir com responsabilidade garante qualidade
-            de vida para as próximas gerações.
-        </p>
+    <!-- IMAGENS -->
+    <section class="imagens">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="Plantação verde">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Trator na lavoura">
+        <img src="https://images.unsplash.com/photo-1609943511820-1c8451241b8d" alt="Agricultor no campo">
     </section>
 
     <!-- VIDEOS -->
-
     <section class="videos">
-
         <h2>Vídeos sobre agricultura e sustentabilidade</h2>
-
         <div class="video-grid">
-
             <iframe 
             src="https://www.youtube.com/embed/ws6n_hZyJm8"
             title="Agricultura sustentável"
@@ -256,9 +235,7 @@ footer{
             title="Preservação ambiental"
             allowfullscreen>
             </iframe>
-
         </div>
-
     </section>
 
 </div>
