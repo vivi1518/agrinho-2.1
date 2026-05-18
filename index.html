@@ -1,206 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026</title>
 
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<style>
 
-        body{
-            background: #f4f4f4;
-            color: #333;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        header{
-            background: linear-gradient(to right, #2e7d32, #66bb6a);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
+body{
+    background:#f5f5f5;
+    color:#333;
+}
 
-        header h1{
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
+/* HEADER */
 
-        header p{
-            font-size: 22px;
-        }
+header{
+    background:linear-gradient(to right,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
 
-        nav{
-            background-color: #1b5e20;
-            padding: 15px;
-            text-align: center;
-        }
+header h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
 
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
+header p{
+    font-size:22px;
+}
 
-        nav a:hover{
-            color: #c8e6c9;
-        }
+/* MENU */
 
-        .banner{
-            width: 100%;
-            height: 400px;
-            background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
-            background-size: cover;
-            background-position: center;
-        }
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+}
 
-        .container{
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 30px 0;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:0.3s;
+}
 
-        .texto{
-            background-color: white;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
+nav a:hover{
+    color:#c8e6c9;
+}
 
-        .texto h2{
-            color: #2e7d32;
-            margin-bottom: 15px;
-        }
+/* BANNER */
 
-        .texto p{
-            font-size: 18px;
-            line-height: 1.7;
-        }
+.banner{
+    width:100%;
+    height:450px;
+    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover no-repeat;
+}
 
-        footer{
-            background-color: #1b5e20;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
+/* CONTAINER */
 
-        @media(max-width: 768px){
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
 
-            header h1{
-                font-size: 35px;
-            }
+/* TEXTOS */
 
-            header p{
-                font-size: 18px;
-            }
+.texto{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
 
-            .banner{
-                height: 250px;
-            }
+.texto h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
 
-            nav a{
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+.texto p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* VIDEOS */
+
+.videos{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.videos h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.video-grid iframe{
+    width:100%;
+    height:250px;
+    border:none;
+    border-radius:12px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:38px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .banner{
+        height:250px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>AGRINHO 2026</h1>
-        <p>Festejando a conexão entre o campo e a cidade</p>
-    </header>
+<header>
+    <h1>AGRINHO 2026</h1>
+    <p>Festejando a conexão entre o campo e a cidade</p>
+</header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Campo</a>
-        <a href="#">Cidade</a>
-        <a href="#">Sustentabilidade</a>
-        <a href="#">Contato</a>
-    </nav>
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Campo</a>
+    <a href="#">Cidade</a>
+    <a href="#">Sustentabilidade</a>
+    <a href="#">Contato</a>
+</nav>
 
-    <div class="banner"></div>
+<div class="banner"></div>
 
-    <div class="container">
+<div class="container">
 
-        <section class="texto">
-            <h2>A importância do campo</h2>
-            <p>
-                O campo é responsável pela produção de alimentos que chegam diariamente
-                às mesas das famílias. A agricultura movimenta a economia, gera empregos
-                e contribui para o desenvolvimento sustentável da sociedade.
-            </p>
-        </section>
+    <section class="texto">
+        <h2>A importância do campo</h2>
+        <p>
+            O campo é essencial para a produção dos alimentos que chegam diariamente às mesas
+            das famílias. A agricultura movimenta a economia, gera empregos e fortalece o desenvolvimento
+            do país.
+        </p>
+    </section>
 
-        <section class="texto">
-            <h2>O trabalho do agricultor</h2>
-            <p>
-                O agricultor desempenha um papel fundamental na sociedade, cuidando da
-                terra e produzindo alimentos com dedicação e esforço. Seu trabalho é
-                essencial para garantir qualidade de vida à população.
-            </p>
-        </section>
+    <section class="texto">
+        <h2>O trabalho do agricultor</h2>
+        <p>
+            O agricultor possui um papel fundamental na sociedade. Com dedicação e esforço,
+            ele cultiva alimentos, preserva o solo e contribui para o crescimento econômico
+            e social.
+        </p>
+    </section>
 
-        <section class="texto">
-            <h2>Tecnologia no campo</h2>
-            <p>
-                A tecnologia vem transformando a agricultura com máquinas modernas,
-                drones e sistemas inteligentes de irrigação. Essas inovações ajudam
-                a aumentar a produtividade e reduzir impactos ambientais.
-            </p>
-        </section>
+    <section class="texto">
+        <h2>Tecnologia no campo</h2>
+        <p>
+            A tecnologia vem transformando a agricultura através de máquinas modernas,
+            drones, sistemas inteligentes e irrigação automatizada. Essas inovações aumentam
+            a produtividade e reduzem impactos ambientais.
+        </p>
+    </section>
 
-        <section class="texto">
-            <h2>Preservação ambiental</h2>
-            <p>
-                A preservação do meio ambiente é essencial para garantir recursos naturais
-                às futuras gerações. O uso consciente da água, a preservação das florestas
-                e o cuidado com o solo são práticas fundamentais.
-            </p>
-        </section>
+    <section class="texto">
+        <h2>Sustentabilidade</h2>
+        <p>
+            A sustentabilidade é importante para garantir um futuro melhor. O cuidado com
+            a água, o solo e as florestas ajuda na preservação ambiental e no equilíbrio
+            da natureza.
+        </p>
+    </section>
 
-        <section class="texto">
-            <h2>Campo e cidade unidos</h2>
-            <p>
-                Campo e cidade estão conectados. Enquanto o campo produz alimentos e
-                matérias-primas, a cidade oferece serviços, tecnologia e oportunidades.
-                Essa parceria fortalece toda a sociedade.
-            </p>
-        </section>
+    <section class="texto">
+        <h2>Campo e cidade unidos</h2>
+        <p>
+            Campo e cidade estão conectados. Enquanto o campo produz alimentos e matérias-primas,
+            a cidade oferece tecnologia, comércio e serviços. Essa união beneficia toda
+            a sociedade.
+        </p>
+    </section>
 
-        <section class="texto">
-            <h2>Alimentação saudável</h2>
-            <p>
-                Frutas, verduras, legumes e grãos produzidos no campo são fundamentais
-                para uma alimentação saudável. Uma boa alimentação melhora a qualidade
-                de vida e promove saúde para todas as pessoas.
-            </p>
-        </section>
+    <section class="texto">
+        <h2>O futuro da agricultura</h2>
+        <p>
+            O futuro da agricultura depende da inovação, da preservação ambiental e do uso
+            consciente dos recursos naturais. Produzir com responsabilidade garante qualidade
+            de vida para as próximas gerações.
+        </p>
+    </section>
 
-        <section class="texto">
-            <h2>O futuro da agricultura</h2>
-            <p>
-                O futuro da agricultura depende da sustentabilidade, da inovação e do
-                respeito à natureza. Produzir alimentos de forma consciente garante um
-                futuro melhor para o planeta e para a população.
-            </p>
-        </section>
+    <!-- VIDEOS -->
 
-    </div>
+    <section class="videos">
 
-    <footer>
-        <p>© 2026 - Projeto Agrinho | Campo e Cidade unidos pelo futuro</p>
-    </footer>
+        <h2>Vídeos sobre agricultura e sustentabilidade</h2>
+
+        <div class="video-grid">
+
+            <iframe 
+            src="https://www.youtube.com/embed/ws6n_hZyJm8"
+            title="Agricultura sustentável"
+            allowfullscreen>
+            </iframe>
+
+            <iframe 
+            src="https://www.youtube.com/embed/6LT6no8t3xg"
+            title="Tecnologia no campo"
+            allowfullscreen>
+            </iframe>
+
+            <iframe 
+            src="https://www.youtube.com/embed/2N8m7mD8lFs"
+            title="Preservação ambiental"
+            allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 - Projeto Agrinho | Campo e Cidade unidos pelo futuro</p>
+</footer>
 
 </body>
 </html>
